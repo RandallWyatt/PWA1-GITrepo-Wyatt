@@ -8,7 +8,7 @@
 //self-executing function
 (function(){
 
-    console.log("FIGHT!!!");
+   console.log("FIGHT!!!");
 
     //player name
 
@@ -30,28 +30,28 @@
 
         alert(playerOneName+":"+playerOneHealth+" *START* "+playerTwoName+":"+playerTwoHealth);
 
-        for (var i= 0; i < 10; i++){
+      for (var i= 0; i < 10; i++){
 
 
 
-            var minDamage1 = player1Damage * .5;
-            var minDamage2 = player2Damage * .5;
-            var f1 = Math.floor(Math.random() * (player1Damage - minDamage1) + minDamage1);
-            var f2 = Math.floor(Math.random() * (player2Damage - minDamage2) + minDamage2);
+          var minDamage1 = player1Damage * .5;
+          var minDamage2 = player2Damage * .5;
+          var f1 = Math.floor(Math.random() * (player1Damage - minDamage1) + minDamage1);
+          var f2 = Math.floor(Math.random() * (player2Damage - minDamage2) + minDamage2);
 
 
 
-            //inflicting damage
-            playerOneHealth-=f1;
-            playerTwoHealth-=f2;
+           //inflicting damage
+          playerOneHealth-=f1;
+          playerTwoHealth-=f2;
 
-            console.log(playerOneName+":"+playerOneHealth+" "+playerTwoName+":"+playerTwoHealth);
-            var results = winnerCheck();
+          console.log(playerOneName+":"+playerOneHealth+" "+playerTwoName+":"+playerTwoHealth);
+           var results = winnerCheck();
             console(result);
-        };
-    };
+      };
+};
     function winnerCheck () {
-        console.log("in winnerCheck FN");
+    console.log("in winnerCheck FN");
         var result = "no winner";
 
         if (playerOneHealth < 1 && playerTwoHealth < 1) {
