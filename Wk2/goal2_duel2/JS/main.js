@@ -6,7 +6,7 @@
 
 
 //self-executing function
-(function(){
+(function (){
 
    console.log("FIGHT!!!");
 
@@ -39,11 +39,13 @@
           var f1 = Math.floor(Math.random() * (player1Damage - minDamage1) + minDamage1);
           var f2 = Math.floor(Math.random() * (player2Damage - minDamage2) + minDamage2);
 
-
+        console.log(f1);
+          console.log(f2);
 
            //inflicting damage
           playerOneHealth-=f1;
           playerTwoHealth-=f2;
+
 
           console.log(playerOneName+":"+playerOneHealth+" "+playerTwoName+":"+playerTwoHealth);
 
@@ -59,7 +61,7 @@
           }
 
       }
-};
+
     function winnerCheck () {
     console.log("in winnerCheck FN");
         var result = "no winner";
@@ -81,4 +83,4 @@
     fight();
 
 
-})();
+}();
